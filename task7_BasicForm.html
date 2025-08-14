@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>  
+    
+     <style>
+  body {
+    background-color: rgb(26, 8, 32);
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+
+  form {
+    background-color: rgb(45, 18, 52);
+    border: 5px solid rgb(241, 175, 245);
+    border-radius: 12px;
+    width: 300px;
+    margin: auto;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  legend {
+    color: rgb(255, 182, 242);
+    font-size: 22px;
+  }
+
+  label {
+    color: rgb(255, 228, 247);
+  }
+
+  input[type="text"] {
+    width: 270px;
+    background-color: rgb(71, 38, 72);
+    border: 2px solid hsl(295, 100%, 86%);
+    color: white;
+    border-radius: 6px;
+  }
+
+  input[type="email"] {
+    width: 270px;
+    background-color: rgb(71, 38, 72);
+    border: 2px solid rgb(249, 182, 255);
+    color: white;
+    border-radius: 6px;
+  }
+  
+  input[type="password"] {
+    width: 270px;
+    background-color: rgb(71, 38, 72);
+    border: 2px solid rgb(249, 182, 255);
+    color: white;
+    border-radius: 6px;
+  }
+
+  input[type="submit"] {
+    background-color: rgb(210, 105, 230);
+    color: white;
+    border: 3px solid rgb(210, 105, 230);
+    border-radius: 6px;
+  }
+
+  input[type="reset"] {
+    background-color: rgb(181, 84, 209);
+    color: white;
+    border: 3px solid rgb(181, 84, 209);
+    border-radius: 6px;
+    margin-left: 10px;
+  }
+
+  h2 {
+    text-align: center;
+    color: rgb(255, 231, 252);
+  }
+</style>
+
+</head>
+<body>
+     <h2>Registration Form</h2>
+
+  <form>
+    <fieldset>
+      <legend>User Information</legend>
+
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+
+    </fieldset>
+  </form>
+</body>
+</html>

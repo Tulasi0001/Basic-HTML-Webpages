@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(29, 29, 29);
+            margin-left: 30px;
+        }
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            color:  rgb(242, 242, 242);
+            font-size: 50px;
+        }
+
+        h3 {
+            font-family: fantasy;
+            color: rgb(173, 255, 47);
+            font-size: 20px;
+        }
+
+        table {
+            background-color: rgb(41, 39, 39);
+            width: 100%;
+            border-spacing: 10px;
+            border-radius: 12px;
+             table-layout: fixed;
+        }
+
+        td {
+            text-align: center;
+            font-family: cursive;
+            color: rgb(245, 216, 181);
+        }
+
+        img {
+            border-radius: 5px;
+            width: 100px;
+            height: 100px;
+            border: 2px solid white;
+            border-style: double;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+
+    <h3>Appetizers</h3>
+    <table>
+        <tr>
+            <td><strong>Paneer Tikka - ₹280</strong></td>
+            <td><strong>Palak Chaat - ₹120</strong></td>
+            <td><strong>Sweet Corn Chaat - ₹120</strong></td>
+        </tr>
+        <tr>
+            <td><img src="pantik.jpg" alt="Paneer Tikka"></td>
+            <td><img src="palakchat.jpg" alt="Palak Chaat"></td>
+            <td><img src="sweet.webp" alt="Sweet Corn Chaat"></td>
+        </tr>
+    </table>
+
+    <h3>Main Courses</h3>
+    <table>
+        <tr>
+            <td><strong>Dal Makhani - ₹280</strong></td>
+            <td><strong>Chole Bhature - ₹250</strong></td>
+             <td><strong>Palak Kofta - ₹250</strong></td>
+        </tr>
+        <tr>
+            <td><img src="dhalmakhni.webp" alt="Dal Makhani"></td>
+            <td><img src="chole.webp" alt="Chole Bhature"></td>
+            <td><img src="palak.jpeg" alt="Palak Kofta"></td>
+        </tr>
+        <tr>
+            <td><strong>Masala Dosa - ₹70</strong></td>
+            <td><strong>Veg Biryani - ₹300</strong></td>
+            <td><strong>Paratha - ₹120</strong></td>
+        </tr>
+        <tr>
+            <td><img src="masaladosa.jpg" alt="Masala Dosa"></td>
+            <td><img src="begbir.jpg" alt="Veg Biryani"></td>
+            <td><img src="paratha.jpeg" alt="Paratha"></td>
+        </tr>
+    </table>
+
+    <h3>Desserts</h3>
+    <table>
+        <tr>
+            <td><strong>Gulab Jamun - ₹50</strong></td>
+            <td><strong>Rasgulla - ₹50</strong></td>
+            <td><strong>Pastries - ₹50</strong></td>
+        </tr>
+        <tr>
+            <td><img src="gulab.jpg" alt="Gulab Jamun"></td>
+            <td><img src="rasagulla.jpg" alt="Rasgulla"></td>
+            <td><img src="pastries.jpeg" alt="Rasgulla"></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!--  using ordered list
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu</title>
+
+    <style>
+      img {
+            border-radius: 5px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Menu</h1>
+
+    <h3>Appetizers</h3>
+    <ol>
+        <li>
+            <strong>Paneer Tikka - ₹280</strong><br>
+            <img src="pantik.jpg" alt="Paneer Tikka" >
+        </li>
+        <li>
+            <strong>Palak Chaat - ₹120</strong><br>
+            <img src="palakchat.jpg" alt="Palak Chaat">
+        </li>
+        <li>
+            <strong>Sweet Corn Chaat - ₹120</strong><br>
+            <img src="sweet.webp" alt="Sweet Corn Chaat">
+        </li>
+    </ol>
+
+    <h3>Main Courses</h3>
+    <ol>
+        <li>
+            <strong>Dal Makhani - ₹280</strong><br>
+            <img src="dhalmakhni.webp" alt="Dal Makhani">
+        </li>
+        <li>
+            <strong>Chole Bhature - ₹250</strong><br>
+            <img src="chole.webp" alt="Chole Bhature">
+        </li>
+        <li>
+            <strong>Palak Kofta - ₹250</strong><br>
+            <img src="palak.jpeg" alt="Palak Kofta">
+        </li>
+        <li>
+            <strong>Masala Dosa - ₹70</strong><br>
+            <img src="masaladosa.jpg" alt="Masala Dosa">
+        </li>
+        <li>
+            <strong>Veg Biryani - ₹300</strong><br>
+            <img src="begbir.jpg" alt="Veg Biryani">
+        </li>
+        <li>
+            <strong>Paratha - ₹120</strong><br>
+            <img src="paratha.jpeg" alt="Paratha">
+        </li>
+    </ol>
+
+    <h3>Desserts</h3>
+    <ol>
+        <li>
+            <strong>Gulab Jamun - ₹50</strong><br>
+            <img src="gulab.jpg" alt="Gulab Jamun">
+        </li>
+        <li>
+            <strong>Rasgulla - ₹50</strong><br>
+            <img src="rasagulla.jpg" alt="Rasgulla">
+        </li>
+        <li>
+            <strong>Pastries - ₹50</strong><br>
+            <img src="pastries.jpeg" alt="Pastries">
+        </li>
+    </ol>
+
+</body>
+</html>
+-->
