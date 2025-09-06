@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(245, 245, 245);
+      color: rgb(44, 62, 80);
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: rgb(41, 128, 185);
+    }
+
+    form {
+      background-color: rgb(255, 255, 255);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    p {
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 80%;
+      padding: 8px;
+      border: 1px solid rgb(200, 200, 200);
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button {
+      background-color: rgb(90, 121, 206);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <h2>New Product Feedback Survey</h2>
+
+  <form>
+    <p>Full Name:</p>
+    <input type="text" name="fullname" required>
+
+    <p>Email:</p>
+    <input type="email" name="email" required>
+
+    <p>Phone Number:</p>
+    <input type="tel" name="phone">
+
+    <p>How did you hear about our new product?</p>
+    <input type="radio" name="source" value="Social Media"> Social Media<br>
+    <input type="radio" name="source" value="Friends/Family"> Friends/Family<br>
+    <input type="radio" name="source" value="Advertisements"> Advertisements<br>
+    <input type="radio" name="source" value="Other"> Other
+
+    <p>Which features do you like the most? (Select all that apply)</p>
+    <input type="checkbox" name="features" value="Design"> Design<br>
+    <input type="checkbox" name="features" value="Performance"> Performance<br>
+    <input type="checkbox" name="features" value="Price"> Price<br>
+    <input type="checkbox" name="features" value="Durability"> Durability<br>
+    <input type="checkbox" name="features" value="Ease of Use"> Ease of Use
+
+    <p>Rate your satisfaction with the product:</p>
+    <select name="rating">
+      <option value="">--Select--</option>
+      <option value="1">1 - Very Dissatisfied</option>
+      <option value="2">2 - Dissatisfied</option>
+      <option value="3">3 - Neutral</option>
+      <option value="4">4 - Satisfied</option>
+      <option value="5">5 - Very Satisfied</option>
+    </select>
+
+    <p>Would you recommend this product to others?</p>
+    <input type="radio" name="recommend" value="Yes"> Yes<br>
+    <input type="radio" name="recommend" value="No"> No
+
+    <p>Suggestions for improvement:</p>
+    <textarea name="suggestions" rows="4" cols="40" placeholder="Write your suggestions here..."></textarea>
+
+    <p><button type="submit">Submit</button></p>
+  </form>
+
+
+
+</body>
+
+</html>

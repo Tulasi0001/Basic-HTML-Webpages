@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Canvas 2D Shapes</title>
+</head>
+
+<body>
+
+    <h2>Canvas: 2D Objects Demo</h2>
+    <canvas id="myCanvas" width="800" height="460"></canvas>
+
+    <script>
+        var c = document.getElementById('myCanvas');
+        var ctx = c.getContext('2d');
+
+        ctx.fillStyle = 'rgb(245,245,245)';
+        ctx.fillRect(0, 0, c.width, c.height);
+
+        ctx.fillStyle = 'rgb(52, 152, 219)';
+        ctx.fillRect(30, 30, 140, 90);
+
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = 'rgb(41, 128, 185)';
+        ctx.strokeRect(30, 30, 140, 90);
+
+        ctx.beginPath();
+        ctx.arc(260, 75, 50, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgb(46, 204, 113)';
+        ctx.fill();
+        ctx.strokeStyle = 'rgb(39, 174, 96)';
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(360, 110);
+        ctx.lineTo(430, 30);
+        ctx.lineTo(500, 110);
+        ctx.fillStyle = 'rgb(231, 76, 60)';
+        ctx.fill();
+        ctx.strokeStyle = 'rgb(192, 57, 43)';
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(560, 30);
+        ctx.lineTo(740, 110);
+        ctx.strokeStyle = 'rgb(44, 62, 80)';
+        ctx.lineWidth = 6;
+        ctx.stroke();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Customer Feedback - Food</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 250, 240);
+            color: rgb(44, 62, 80);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(210, 105, 30);
+        }
+
+        form {
+            background-color: rgb(255, 255, 255);
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        p {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 80%;
+            padding: 8px;
+            border: 1px solid rgb(200, 200, 200);
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: rgb(210, 105, 30);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Customer Feedback - Food</h2>
+
+    <form>
+        <p>Full Name:</p>
+        <input type="text" name="fullname" required>
+
+        <p>Email:</p>
+        <input type="email" name="email" required>
+
+        <p>What dish did you order?</p>
+        <input type="text" name="dish" required>
+
+        <p>How would you rate the taste?</p>
+        <input type="radio" name="taste" value="Excellent"> Excellent<br>
+        <input type="radio" name="taste" value="Good"> Good<br>
+        <input type="radio" name="taste" value="Average"> Average<br>
+        <input type="radio" name="taste" value="Poor"> Poor
+
+        <p>How would you rate the presentation?</p>
+        <select name="presentation">
+            <option value="">--Select--</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Poor</option>
+            <option value="1">1 - Very Poor</option>
+        </select>
+
+        <p>What did you like most about the food? (Select all that apply)</p>
+        <input type="checkbox" name="like" value="Flavor"> Flavor<br>
+        <input type="checkbox" name="like" value="Freshness"> Freshness<br>
+        <input type="checkbox" name="like" value="Quantity"> Quantity<br>
+        <input type="checkbox" name="like" value="Aroma"> Aroma<br>
+        <input type="checkbox" name="like" value="Price"> Price
+
+        <p>Would you visit again?</p>
+        <input type="radio" name="visit" value="Yes"> Yes<br>
+        <input type="radio" name="visit" value="No"> No
+
+        <p>Additional comments:</p>
+        <textarea name="comments" rows="4" "></textarea>
+
+        <p><button type="submit">Submit Feedback</button></p>
+    </form>
+
+</body>
+
+</html>
